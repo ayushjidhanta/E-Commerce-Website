@@ -68,13 +68,14 @@ const LoginForm = () => {
       <button className="login-btn" onClick={handleAuth}>
         Login
       </button>
+      
       <button className="SignUp-btn" onClick={handleSignUp}>
         Signup
       </button>
       <p className="text">Or Login Using</p>
 
       <div className="alt-login">
-        <div className="facebook"  ></div>
+        <div className="facebook" ></div>
         <div className="google" > </div>
       </div>
     </div>
