@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Robots:wght@100;300;400;500;700&diplay=swap');
 
 :root{
-    --main-color: #846363;
+    --main-color: #231e1e;
     --black:rgb(0, 0, 0);
     --bg: rgb(80, 116, 65);
-    --border: .1rem solid rgba(255, 255, 255, .3)
+    --border: 0.1rem solid rgba(255, 255, 255, .3)
 }
 *{
     font-family: 'Roboto', sans-serif;
@@ -43,6 +43,19 @@ body{
     background: var(--bg);
 }
 
+.btnn{
+    margin-top: 1rem;
+    display:inline-block ;
+    padding: 7rem 3rem;
+    font-size: 1.7rem;
+    color: rgb(243, 243, 243);
+    background: var(--main-color);
+    cursor: pointer;
+}
+.btnn:hover{
+    letter-spacing: .2rem;
+}
+
 .header{
     background: var(--bg);
     display: flex;
@@ -59,6 +72,7 @@ body{
   margin: 0 1rem;
   font-size: 1.6rem;
   color:white;
+  text-decoration: none;
 }
 
 .header .navbar a:hover{
@@ -68,18 +82,21 @@ body{
 }
 
 .header .icons div{
-    color: white;
+    color: rgb(240, 240, 240);
     cursor: pointer;
     font-size: 2.5rem;
     margin-left: 2rem;
+    
 }
 
-.header .icon div:hover{
+.header .icons div:hover{
     color: var(--main-color);
 
 }
-#menu-btn{
+
+#menu-btnn{
     display:none;
+    
 }
 .header .search-form{
     position:absolute;
@@ -111,4 +128,99 @@ header .search-form input{
 .header .search-form label:hover{
     color:var(--main-color);
 
+}
+ 
+/* cart items section----- */
+.header .cart-items-container {
+    position: absolute;
+    top:100%;
+    right: -100%;
+    height: calc(100vh - 9.5rem);
+    background : white ;
+    padding: 0 1.5rem;
+
+}
+.header .cart-items-container.active{
+   right: 0;
+   
+}
+.header .cart-items-container .cart-item{
+    position: relative;
+    margin: 2rem 0;
+    display: flex;
+    align-items:center;
+    gap:1.5 rem;
+}
+.header .cart-items-container .cart-item .fa-times{
+position: absolute;
+top: 1rem; 
+right: 1rem;
+font-size: 2rem;
+cursor: pointer;
+color: var(--black);
+
+}
+
+.header .cart-items-container .cart-item .fa-times:hover{
+    color:var(--main-color);
+
+}
+.header .cart-items-container .cart-item img{
+    height: 2rem;
+}
+.header .cart-items-container .cart-item .content h3{
+    font-size: 2rem;
+    color: var(--black);
+    padding-bottom: .5rem;
+}
+.header .cart-items-container .cart-item .content .price{
+    font-size: 2rem;
+    color:var(--black);
+}
+
+/* Checkout button --------*/
+.header .cart-items-container .Checkout  {
+color:rgb(255, 255, 255);
+background-color: rgb(29, 116, 55);
+border-radius: 10rem;
+height: 3rem;
+width: 10rem;
+transition:linear;
+}
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+
+    }
+    .header{
+        padding: 1.5rem 2rem;
+    }
+}
+
+@media (max-width:991px){
+    #menu-btnn{
+        display: inline-block;
+
+    }
+
+    .header .navbar{
+        position: absolute;
+        top:100%;
+        right: -100%;
+        background: rgb(249, 245, 245);
+        height: calc(100vh - 9.5rem);
+        display: inline-block;
+    }
+   
+    .header .navbar.active{
+        right: 0;
+    }
+     .header .navbar a{
+        color:var(--black);
+        display: block;
+        padding: .5rem;
+        margin: 1.5rem;
+        font-size: 2rem;
+     }
 }

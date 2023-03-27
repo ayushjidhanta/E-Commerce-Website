@@ -35,10 +35,10 @@ const LoginForm = () => {
     }
     else if (username === ""){
       let text3 ;
-      text3 = "Error! Password is not Filled"
+      text3 = "Error! Username is not Filled"
       document.getElementById("demo").innerHTML = text3;
     }
-    else if(username === localStorage.getItem("usernameS") || password === localStorage.getItem("passwordP")){
+    else if(username === localStorage.getItem("usernameS") && password === localStorage.getItem("passwordP")){
       console.log("The Local Storage fetch success and Working");
       navigate("/home");
     }
