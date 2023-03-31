@@ -13,7 +13,7 @@ export default function Navbar2() {
     navigate("/Home");
   };
   const clickAbout = () => {
-    navigate("/Aboutbt");
+    navigate("/About");
   };
   
   const searchRef = useRef(null);
