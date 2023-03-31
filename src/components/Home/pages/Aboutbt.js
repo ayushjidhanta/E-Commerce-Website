@@ -1,7 +1,10 @@
 import React from 'react'
+import Navbar2 from '../Navbar2'
 
 export default function Aboutbt() {
   return (
+    <>
+    <Navbar2/>
     <div>
       <h1> We are in about section </h1>
       <div class="accordion" id="accordionPanelsStayOpenExample">
@@ -43,5 +46,6 @@ export default function Aboutbt() {
   </div>
 </div>
     </div>
+    </>
   )
 }

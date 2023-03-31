@@ -17,6 +17,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image:url(/src/components/Home/images/bg-login-pg3.jpg);
+    background-position: 100rem;
 }
 
 .coverLogin {

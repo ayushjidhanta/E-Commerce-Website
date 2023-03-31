@@ -5,7 +5,8 @@ import Signup from "./components/Login/SignUp";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 // import Homebt from "./components/Home/pages/homebt";
 import Aboutbt from "./components/Home/pages/Aboutbt";
-
+import Explore from "./components/Explore/Explore";
+import Cart from "./components/Cart/Cart";
 function App() {
   return (
     <BrowserRouter>
@@ -15,7 +16,8 @@ function App() {
         <Route exact path="/signup" element={<Signup />} />
         {/* <Route exact path="/homebt" element={<Homebt/>}/> */}
         <Route exact path="/Aboutbt" element={<Aboutbt/>}/>
-        
+        <Route exact path="/Cart" element={<Cart/>}/>
+        <Route exact path="/Explore" element={<Explore/>}/>
       </Routes>
     </BrowserRouter>
   );
