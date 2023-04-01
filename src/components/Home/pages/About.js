@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar2 from '../Navbar2'
 
-export default function Aboutbt() {
+export default function About() {
   return (
     <>
     <Navbar2/>
