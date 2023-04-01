@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import { useNavigate } from "react-router";
-import { Link } from "react-router-dom";
 // import img1 from "./images/apple1.jpg";
 import "./Nav2.css";
 export default function Navbar2() {
@@ -38,7 +37,7 @@ export default function Navbar2() {
       {/* <h1>Navbar2</h1> */}
       <nav className="navbar" ref={navbarRef}>
         <a href=" " onClick={clickHome}>home</a>
-        <Link to="/About">about</Link>
+        <a href=" " onClick={clickAbout}>about</a>
         <a href="#menu">menu </a>
         <a href="#Products">products </a>
         <a href="#review">review </a>
