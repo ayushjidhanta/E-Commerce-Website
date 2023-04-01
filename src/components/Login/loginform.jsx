@@ -40,7 +40,7 @@ const LoginForm = () => {
     }
     else if(username === localStorage.getItem("usernameS") && password === localStorage.getItem("passwordP")){
       console.log("The Local Storage fetch success and Working");
-      navigate("/home");
+      navigate("/Home");
     }
     else{
       let text4;
@@ -62,7 +62,6 @@ const LoginForm = () => {
 
       <input type="text" id="username" placeholder="username" />
       <p className = "pp"id="demo" ></p>
-
       <input type="password" id="password" placeholder="password" />
       
       <button className="login-btn" onClick={handleAuth}>

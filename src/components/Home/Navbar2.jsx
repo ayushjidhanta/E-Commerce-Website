@@ -36,8 +36,8 @@ export default function Navbar2() {
     <div className="header">
       {/* <h1>Navbar2</h1> */}
       <nav className="navbar" ref={navbarRef}>
-        <a href=" " onClick={clickHome}>home</a>
-        <a href="#About" onClick={clickAbout}>about</a>
+        <a href="/Home" onClick={clickHome}>home</a>
+        <a href="/About" onClick={clickAbout}>about</a>
         <a href="#menu">menu </a>
         <a href="#Products">products </a>
         <a href="#review">review </a>
