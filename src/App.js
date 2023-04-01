@@ -4,7 +4,7 @@ import Home from "./components/Home/Home";
 import Signup from "./components/Login/SignUp";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 // import Homebt from "./components/Home/pages/homebt";
-import About from "./components/Home/pages/About";
+import About from "./components/Home/About/About";
 import Explore from "./components/Explore/Explore";
 import Cart from "./components/Cart/Cart";
 function App() {
