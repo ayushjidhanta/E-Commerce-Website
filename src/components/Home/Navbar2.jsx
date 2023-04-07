@@ -50,8 +50,8 @@ export default function Navbar2() {
         <div
           className="fas fa-shopping-cart"
           id="cart-btnn"
-          onClick={toggleCart}
-        ></div>
+          onClick={toggleCart}>
+        </div>
         <div className="fas fa-bars" id="menu-btnn" onClick={toggleMenu}></div>
       </div>
 
@@ -62,15 +62,21 @@ export default function Navbar2() {
       
       {/* CART ITEMS CONTAINER----- */}
       <div className="cart-items-container" ref={cartItemRef}>
+      
         <div className="cart-item">
+          <img src="/public-images/HH.jpg" className="img-fluid" alt="..."></img>
           <span className="fas fa-time"></span>
-          {/* <img src={img1} width={100} height={100}  right ={0} alt = ".."></img> */}
-          <div className="content">
-            <h3>cart item 01</h3>
-            <div className="price">200Rs/kg</div>
+          <div className="content ">
+            <h3>Cart Items</h3>
+            <div className="price">
+              Price</div>
           </div>
         </div>
-        <button className="Checkout" onClick={togglePg}>Cart</button>
+
+        <div className="bag-quantity">
+          <span>3</span>
+        </div>
+        <button className="Checkout" onClick={togglePg}>Go to My Cart </button>
       </div>
     </div>
   );
